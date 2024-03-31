@@ -16,7 +16,7 @@ body{
 transform: rotate(30deg);
 }
 
-li, a, button, title {
+li, a, button, title, i {
     font-family: "Monserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -34,7 +34,7 @@ header{
     list-style: none;
   
 }
-.nav-links li {
+.nav-links li  {
 display:inline-block;
 padding: 0px 70px;
 }
@@ -44,6 +44,13 @@ padding: 0px 70px;
 .nav-links li a:hover {
     color: #0088a9;
 }
+i {
+  transition: all 0.3s ease 0s;
+}
+i:hover {
+  color: #0088a9;
+}
+
 button{
     padding: 9px 25px;
     background-color:#0088a9;
@@ -67,7 +74,7 @@ kontakt {
 }
 .kontakt-links li {
 display: inline-block;
-padding: 40px 60px;
+padding: 40px 50px;
 margin-right: 20px;
 
 
