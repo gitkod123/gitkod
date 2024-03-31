@@ -5,12 +5,9 @@
 
 * {
 box-sizing: border-box;
-margin: 0%;
-padding: 0%;
-
 }
 body{
-    background-image: url('https://wallpaperaccess.com/full/3167720.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.0001), #000000), url('https://wallpaperaccess.com/full/3167720.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -25,19 +22,21 @@ li, a, button, title {
     font-size: 16px;
     color: #edf0f1;
     text-decoration: none;
+   
 }
 header{
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-    padding: 1px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  padding: 1px 10%;
 }
 .nav-links{
     list-style: none;
+  
 }
 .nav-links li {
 display:inline-block;
-padding: 0px 60px;
+padding: 0px 80px;
 }
 .nav-links li a {
     transition: all 0.3s ease 0s;
@@ -55,79 +54,8 @@ button{
 }
 body {
     padding: 30px;
+   
   }
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    gap: 0px;
-    grid-auto-rows: minmax(200px, 40%);
-  }
-  .gallery__img {
-    width: 250px;    
-    height: 500px;
-    object-fit: cover;
-    border-radius: 20px;
-    max-width: auto;
-    max-height: auto;
-    cursor: pointer ;
-}
-.gallery__item--1  {    
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    
-}
-.gallery__item--2  {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    
-}
-.gallery__item--3 {
-    grid-column-start: 5;
-    grid-column-end: 7;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    
-}
-.gallery__item--4 {
-    grid-column-start: 7;
-    grid-column-end: 9;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    
-}
-.gallery__item--5 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 5;
-    
-}
-.gallery__item--6 {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 5;
-    
-}
-.gallery__item--7 {
-    grid-column-start: 5;
-    grid-column-end: 7;
-    grid-row-start: 3;
-    grid-row-end: 5;
-    
-}
-.gallery__item--8 {
-    grid-column-start: 7;
-    grid-column-end: 9;
-    grid-row-start: 3;
-    grid-row-end: 5;
-    
-    
-}
 kontakt {
     display: flex;
     justify-content: space-between;
@@ -157,14 +85,6 @@ h1{
     color: #edf0f1;
     text-decoration: none;
 }
-.article-text, .Hallal{
-    font-family: "Monserrat", sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    color: #edf0f1;
-    text-decoration: none; 
-    position: relative;
-}
 h2 {
     font-family: "Monserrat", sans-serif;
     font-weight: 500;
@@ -173,42 +93,40 @@ h2 {
     text-decoration: none; 
     position: relative;
 }
-h3 {
-    font-family: "Monserrat", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #edf0f1;
-    text-decoration: none; 
-    position: relative;
-}
-.prezes-img {
-    border-radius: 20px;
-    cursor: pointer;
-  }
   label {
     font-family: "Monserrat", sans-serif;
-    display: flex;
     align-items: center;
     color: #edf0f1;
+    padding: 20px;
+    
   }
-  textarea:focus, input:focus {
+  textarea:focus, input:focus, select:focus {
     color: #0088a9;
     cursor: pointer;
+    background: transparent;
+   
     
 }
 
 input, textarea{
-    color: #0d1417;
+    color: #ffffff;
     cursor: pointer;
-    border:solid;
+    border: 2px solid;
+    background: transparent;
+   
     
 }
 select, input {
     width: 20%;
-    padding: 12px 20px;
+    padding: 15px 15px;
     margin: center;
     box-sizing: border-box;
     border-radius: 20px;
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid;
+    
+  
   }
 
   .container {
@@ -256,8 +174,8 @@ select, input {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg,#0088a9,#000);
+    height: 100%; 
+    background: linear-gradient(180deg,#0088a9,#000000);
     z-index: 1;
     opacity: 0;
     transition: 0.5s;
@@ -308,18 +226,117 @@ select, input {
   .container .box:hover .content p {
     transform: translateY(0px);
   }
-  para {
-    margin: 100px;
+.Hallal {
+    font-size: 60px;
+    font-family: "Monserrat", sans-serif;
+   margin: 5%;
+    
     
   }
-  abc {
-    margin:200px;
+  .Hallal{
+    color: transparent;
+    -webkit-text-stroke: 2px #0088a9;
+    position: relative;
   }
-headd {
+  .Hallal::before {
+    content: "Chcesz wypożyczyć luksusowy samochód?";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    color: #0088a9;
+    border-right: 5px solid #0088a9;
+    transition: 0.85s ease-in-out;
+  }
+  .Hallal:Hover::before{
+    width: 97%;
+    filter: drop-shadow(0 0 25px #0088a9);
+  }
+  .article-text {
+    font-size: 25px;
     font-family: "Monserrat", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #edf0f1;
-    text-decoration: none;
+    margin: 15%;
+  }
+  .article-text {
+    color: transparent;
+    -webkit-text-stroke: 1px #0088a9;
+    position: relative;
+  }
+  .article-text::before {
+    content: "Operujemy szerokim wachlarzem pojazdów, zapraszamy do skorzystania z naszej oferty";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    color: #0088a9;
+    border-right: 5px solid #0088a9;
+    transition: 1s ease-in-out;
+  }
+  .article-text:Hover::before{
+    width: 101%;
+    filter: drop-shadow(0 0 25px #0088a9);
+  }
+  headd {
+    font-size: 40px;
+    font-family: "Monserrat", sans-serif;
+   margin: 39%;
+   
+  }
+  headd {
+    color: transparent;
+    -webkit-text-stroke: 1.2px #0088a9;
+    position: relative;
+  }
+  headd::before {
+    content: "Prezes i fundator";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    color: #0088a9;
+    border-right: 5px solid #0088a9;
+    transition: 0.8s ease-in-out;
+  }
+  headd:Hover::before{
+    width: 101%;
+    filter: drop-shadow(0 0 25px #0088a9);
+  }
+  .hero-banner {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    position: relative;
+    justify-content: center;
+    z-index: -1;
   }
   
+  .hero-banner__title {
+    color: #ffffff;
+    font-size: 100px;
+    font-weight: 700;
+    padding: 0 30px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .hero-banner__stroked-title {
+    color: transparent;
+    -webkit-text-stroke: 2px #ffffff;
+    text-shadow: 2px rgb(255, 255, 255);
+  }
+  
+  .hero-banner__image {
+    border-radius: 20px;
+    position: center;
+    transform: rotate(-15deg);
+    width: 450px;
+  }
+  body {
+    background-color: #000;
+    font-family: Arial;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
